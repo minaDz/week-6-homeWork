@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <title>Weather 🌦</title>
+    <link rel="stylesheet" href="src/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Sofia"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card m-5">
+        <div class="card-header m-header">Weather Forcast</div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col">
+			<form id="search-form">
+              <input
+                class="form-control m-3"
+                placeholder="Type to search..."
+                id="search-box"
+              />
+            </div>
+            <div class="col">
+            <button type="button" class="btn btn-success m-3" id="search-btn">🔍Search</button>
+            <button type="button" class="btn btn-primary m-3" id="location-btn">📍Location</button>
+			</form>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="text" id="city">...</div>
+              <div class="text" id="today-date"></div>
+              <div class="text">
+				<span id="temperature"> </span>℃</div>
+        <div class="text" id="coords"></div>
+            </div>
+            <div class="col">
+              <div class="text" >Humidity: <span id="Humidity"></span></div>
+              <div class="text" >Wind: <span id="Wind"></span> km/h</div>
+              
+            </div>
+          </div>
+
+          <div class="row">
+          </div>
+        </div>
+        <div class="card-footer text-muted days">©Fatemeh Dashtizadeh</div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
